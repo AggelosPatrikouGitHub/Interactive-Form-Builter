@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form Builder</title>
+  <link rel="stylesheet" href="looks.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive Form Builder</h1>
+    </header>
+
+    <main>
+      <section id="builder">
+        <h2>Form Builder</h2>
+        <div class="controls">
+          <button onclick="addField('text')">Add Text Field</button>
+          <button onclick="addField('textarea')">Add Textarea</button>
+          <button onclick="addField('checkbox')">Add Checkbox</button>
+          <button onclick="addField('radio')">Add Radio Button</button>
+          <button onclick="addField('dropdown')">Add Dropdown</button>
+        </div>
+        <div id="form-builder"></div>
+      </section>
+
+      <section id="preview">
+        <h2>Form Preview</h2>
+        <form id="form-preview"></form>
+      </section>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
